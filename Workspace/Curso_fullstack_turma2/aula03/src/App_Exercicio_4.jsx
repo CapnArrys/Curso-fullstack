@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
-import HookContador from './components/HookContador'
+import RenderizandoComFuncoes from './components/RenderizandoComFuncoes'
 
 const App = () => {
   
   return (
     <div className="container">
-      <HookContador />
-   
+      <h1>Renderização Condicional</h1>
+      <RenderizandoComFuncoes />
 
     
 
