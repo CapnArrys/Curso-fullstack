@@ -15,7 +15,7 @@ const HookContador = () => {
     }
   return (
     <div className='container'>
-        <h1>Exemplo de Contador</h1>
+       
 
         <h2>Contador: {contador}</h2>
 
