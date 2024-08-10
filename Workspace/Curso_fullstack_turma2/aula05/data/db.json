@@ -1,0 +1,73 @@
+{
+  "alunos": [
+    {
+      "nome": "Roberto Carlos",
+      "email": "robcarlos@hotmail.com",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nome": "David Hayter",
+      "email": "23sn2k3@atebin.com"
+    },
+    {
+      "nome": "Sicrano medeiros",
+      "email": "sicrano@gmail.com",
+      "id": 4
+    },
+    {
+      "nome": "fulano",
+      "email": "fulano@gmail.com",
+      "id": 5
+    },
+    {
+      "nome": "fulano",
+      "email": "fulano@gmail.com",
+      "id": 6
+    },
+    {
+      "nome": "fulano",
+      "email": "fulano@gmail.com",
+      "id": 7
+    },
+    {
+      "nome": "fulano",
+      "email": "fulano@gmail.com",
+      "id": 8
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "nome": "Curso Fullstack",
+      "descrição": "Curso fullstack com kelson sobre frontend e backend com reactjs e java/spring",
+      "duração": "7 horas",
+      "instrutor": "Kelson Almeida"
+    },
+    {
+      "id": 2,
+      "nome": "Curso Back",
+      "descrição": "Curso de backend",
+      "duração": "4 horas",
+      "instrutor": "Fujioka"
+    }
+  ],
+  "contatos": [
+    {
+      "nome": "awmdawd",
+      "contato": "saedawd",
+      "mensagem": "alaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhhhhhhhhhhhhhhh",
+      "id": 1
+    }
+  ],
+  "usuarios": [
+    {
+      "usuario": "aowfjoaf",
+      "email": "awudi@gmail.com",
+      "senha": "lala",
+      "endereco": "muamauam 1829319823",
+      "telefone": "838093021",
+      "id": 1
+    }
+  ]
+}
