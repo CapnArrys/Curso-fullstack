@@ -19,6 +19,8 @@ public record CriarFornecedorRequest(
         String email,
 
         @NotNull(message = "o tipo de fornecedor é obrigatório")
-        TipoFornecedorEnum tipoFornecedor
+        TipoFornecedorEnum tipoFornecedor,
+
+        EnderecoDTO endereco
 ) {
 }
