@@ -1,4 +1,4 @@
-package br.com.gerenciadordeprodutos.api.Dtos;
+package br.com.gerenciadordeprodutos.api.dtos;
 
 public record FornecedorCriadoResponse(
         String mensagem,

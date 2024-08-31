@@ -1,6 +1,6 @@
-package br.com.gerenciadordeprodutos.api.Dtos;
+package br.com.gerenciadordeprodutos.api.dtos;
 
-import br.com.gerenciadordeprodutos.api.Enums.TipoFornecedorEnum;
+import br.com.gerenciadordeprodutos.api.enums.TipoFornecedorEnum;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

@@ -1,8 +1,8 @@
-package br.com.gerenciadordeprodutos.api.Service;
+package br.com.gerenciadordeprodutos.api.service;
 
-import br.com.gerenciadordeprodutos.api.Dtos.CriarFornecedorRequest;
-import br.com.gerenciadordeprodutos.api.Dtos.FornecedorCriadoResponse;
-import br.com.gerenciadordeprodutos.api.Model.Fornecedor;
+import br.com.gerenciadordeprodutos.api.dtos.CriarFornecedorRequest;
+import br.com.gerenciadordeprodutos.api.dtos.FornecedorCriadoResponse;
+import br.com.gerenciadordeprodutos.api.model.Fornecedor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

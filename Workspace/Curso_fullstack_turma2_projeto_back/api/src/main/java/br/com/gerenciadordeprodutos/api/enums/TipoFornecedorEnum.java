@@ -1,4 +1,4 @@
-package br.com.gerenciadordeprodutos.api.Enums;
+package br.com.gerenciadordeprodutos.api.enums;
 
 public enum TipoFornecedorEnum {
     COMUM,

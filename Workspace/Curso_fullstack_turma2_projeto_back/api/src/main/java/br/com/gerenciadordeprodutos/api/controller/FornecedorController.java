@@ -1,12 +1,12 @@
-package br.com.gerenciadordeprodutos.api.Controller;
+package br.com.gerenciadordeprodutos.api.controller;
 
 
 
 
-import br.com.gerenciadordeprodutos.api.Dtos.CriarFornecedorRequest;
-import br.com.gerenciadordeprodutos.api.Dtos.FornecedorCriadoResponse;
-import br.com.gerenciadordeprodutos.api.Model.Fornecedor;
-import br.com.gerenciadordeprodutos.api.Service.FornecedorService;
+import br.com.gerenciadordeprodutos.api.dtos.CriarFornecedorRequest;
+import br.com.gerenciadordeprodutos.api.dtos.FornecedorCriadoResponse;
+import br.com.gerenciadordeprodutos.api.model.Fornecedor;
+import br.com.gerenciadordeprodutos.api.service.FornecedorService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

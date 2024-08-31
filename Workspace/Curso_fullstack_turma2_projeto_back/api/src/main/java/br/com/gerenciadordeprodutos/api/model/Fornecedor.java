@@ -1,9 +1,7 @@
-package br.com.gerenciadordeprodutos.api.Model;
+package br.com.gerenciadordeprodutos.api.model;
 
-import br.com.gerenciadordeprodutos.api.Enums.TipoFornecedorEnum;
-import jakarta.annotation.Nullable;
+import br.com.gerenciadordeprodutos.api.enums.TipoFornecedorEnum;
 import jakarta.persistence.*;
-import jdk.jfr.Name;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -35,8 +33,14 @@ public class Fornecedor implements Serializable {
     @Enumerated(EnumType.STRING)
     private TipoFornecedorEnum tipoFornecedor;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "endereco_id", referencedColumnName = "id")
+    private Endereco endereco;
+
+
     @Column(name = "criado_em", nullable = false)
     private LocalDateTime criadoEm;
+
 
 
 
