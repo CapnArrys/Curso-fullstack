@@ -48,7 +48,7 @@ public class FornecedorServiceImpl implements FornecedorService {
 
         return new FornecedorCriadoResponse(
                  "Fornecedor criado com sucesso!",
-                fornecedor.getId()
+                fornecedorCriado.getId()
         );
 
     }
@@ -70,13 +70,27 @@ public class FornecedorServiceImpl implements FornecedorService {
         Fornecedor fornecedorExistente = fornecedorRepository.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Fornecedor não encontrado."));
 
+        Endereco endereco = fornecedorExistente.getEndereco();
+        if (endereco == null) {
+            endereco = new Endereco();
+        }
+
+        endereco.setLogradouro(criarFornecedorRequest.endereco().logradouro());
+        endereco.setNumero(criarFornecedorRequest.endereco().numero());
+        endereco.setComplemento(criarFornecedorRequest.endereco().complemento());
+        endereco.setBairro(criarFornecedorRequest.endereco().bairro());
+        endereco.setCidade(criarFornecedorRequest.endereco().cidade());
+        endereco.setEstado(criarFornecedorRequest.endereco().estado());
+        endereco.setPais(criarFornecedorRequest.endereco().pais());
+        endereco.setCep(criarFornecedorRequest.endereco().cep());
+
         fornecedorExistente.setNome(criarFornecedorRequest.nome());
         fornecedorExistente.setCnpj(criarFornecedorRequest.cnpj());
         fornecedorExistente.setEmail(criarFornecedorRequest.email());
         fornecedorExistente.setTipoFornecedor(criarFornecedorRequest.tipoFornecedor());
+        fornecedorExistente.setEndereco(endereco);
 
         return fornecedorRepository.save(fornecedorExistente);
-
     }
 
     public void excluirFornecedorPeloId(Long id) {

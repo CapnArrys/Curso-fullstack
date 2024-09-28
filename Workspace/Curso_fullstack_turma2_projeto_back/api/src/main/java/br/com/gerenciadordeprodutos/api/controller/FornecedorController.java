@@ -17,7 +17,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/fornecedores")
-@AllArgsConstructor
 public class FornecedorController {
 
     @Autowired
